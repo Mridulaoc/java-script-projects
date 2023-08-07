@@ -1,0 +1,75 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f1f5f8;
+}
+
+.main-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+}
+
+.gift{
+    height: 40rem;
+    padding: 3rem;
+}
+
+.gift-info{
+    padding: 3rem;
+}
+
+.gift-info h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(71, 71, 121);
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+
+}
+.gift-info h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.gift-info p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: gray;
+}
+
+.countdown-timer{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.timer-format{
+    height: 8rem;
+    width: 8rem;
+    background-color: rgb(71, 71, 121);;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-format h3{
+
+    font-size: 3rem;
+}
+
+.timer-format span{
+    font-size: 2rem;
+}

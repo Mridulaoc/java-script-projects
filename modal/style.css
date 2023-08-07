@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+main{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url('hero.jpeg');
+    background-position: center;
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 40%;   
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title{
+    font-size: 5rem;
+    color: rgb(44, 44, 69);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.open-btn{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background: #2f9af1;
+    color: white;
+    outline: none;
+    border: 2px solid #2f9af1;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(16,16,16,0.5);
+    transition: all .5s linear;
+    cursor: pointer;
+}
+
+.open-btn:hover{
+    background-color: white;
+    color: #2f9af1;
+    
+}
+
+.open-modal{
+    width: 40%;   
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-align: center;    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    visibility: hidden;
+
+}
+
+.open-modal h1 {
+    font-size: 3rem;
+}
+
+.fa-xmark{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(150, 22, 22);
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(93, 175, 233, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+
+    

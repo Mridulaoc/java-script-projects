@@ -1,0 +1,243 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+/* header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("hero-bcg.jpeg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+   
+} */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(58, 199, 231, 0.5), rgba(12, 13, 13, 0.7));
+}
+
+.navbar{
+ z-index: 1;
+  color: black;
+  height: 7rem;
+  position: absolute;
+ top: 5%;
+ padding: 0 20rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%; 
+
+ 
+}
+
+
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.5);
+  
+  z-index: 1;
+}
+
+.logo{
+ 
+  width: 7rem;  
+  transition: all 0.3s ease;
+}
+
+.nav-links{
+ 
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  
+ 
+ }
+
+ .nav-links li a{
+  text-decoration: none;
+  font-size: 2.5rem;
+  /* color: white; */
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease;
+ } 
+
+
+ .sticky .nav-links li a{
+  color: rgb(20, 20, 40);
+  transition: color .3s;
+ }
+
+ .sticky .nav-links li a:hover{
+  color: rgb(73, 187, 225);
+ }
+
+ .fa-bars{
+  font-size: 3rem;
+  display: none;
+ }
+
+ .hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("hero-bcg.jpeg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+ 
+}
+
+ .center-content{  
+  position: absolute;
+  text-align: center;  
+  width: 50%;  
+  margin: auto;
+  bottom: 20%;
+  left: 25%;
+  
+ }
+
+ .center-content h1{
+
+  font-size: 6rem;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+
+ }
+
+ .center-content p{
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  line-height: 2;
+ }
+
+ .btn{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  padding: .75rem 2rem;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+ }
+
+ .btn:hover{
+  background: white;
+  color: rgb(73, 187, 225);
+ }
+
+ section{
+  width: 100%;
+  height: 50rem;
+  text-align: center;  
+
+ }
+
+ #about, #tours{
+  background-color: #f1f3f5;
+
+ }
+h2{
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(20, 20, 40);
+}
+h2 span{
+  color: rgb(25, 168, 215);
+}
+
+footer{
+  width: 100%;
+  height: 15rem;
+  background-color: rgb(27, 27, 55);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 5rem;
+}
+
+/* responsive code  */
+
+@media (max-width:800px){
+  html{
+    font-size: 50%;
+    }
+
+    .navbar{
+      background-color: white;
+      top: 0;
+      left: 0;
+      padding: 0 3rem;
+    }
+
+    .fa-bars{
+      display: block;
+    }
+
+    .nav-links{
+      position: absolute;
+      left: 0;
+      top: 7rem;
+      background-color: white;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      visibility: hidden;
+      opacity: 0;
+      /* height: 0; */
+      transition: height 0.3s ease;
+      
+    }
+
+  .nav-links.active {
+    visibility: visible;    
+    opacity: 1;
+  
+    
+   }
+
+   .active.nav-links li a{
+    color: rgb(20, 20, 40);    
+   }
+  
+   .active.nav-links li a:hover{
+    color: rgb(73, 187, 225);
+   }
+  
+
+
+
+
+}

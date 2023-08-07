@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f1f3f5;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title{
+    font-size: 3rem;
+    margin: 5rem 0 5rem 0;
+    text-transform: uppercase;
+    color: rgb(7, 26, 49);
+}
+
+.lorem-ipsum{
+    width: 60%;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+label{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(88, 88, 239);
+}
+
+
+#para-count{
+   max-width:7%;
+   padding: .75rem .5rem;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+}
+
+.btn{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgb(88, 88, 239);
+    padding: .75rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.para-container{
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+}
+

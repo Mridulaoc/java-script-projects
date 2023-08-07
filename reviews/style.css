@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+   
+}
+
+body{
+    background-color: #f1f3f5;
+}
+
+.reviews-container{
+width: 100%;
+height: 100vh;
+flex-direction: column;
+display: flex;
+margin-top: 15rem;
+align-items: center;
+
+}
+
+.title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    color: #22224e;
+}
+
+.underline{
+    width: 8rem;
+    height: .5rem;
+    background-color:  #4e4ef9;
+    margin-bottom: 3rem;
+}
+
+.review-details{
+    max-width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+}
+
+.img-container{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-color: rgb(19, 107, 222);
+    position: relative;
+    
+}
+
+.quote{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    background-color: blue;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa-quote-right{
+    font-size: 2rem;
+   
+}
+.author-img{
+    height: 15rem;
+    width: 15rem;   
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translate(-5%,3%);
+    }
+
+.author{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #070736;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.job{
+    font-size: 1.25rem;
+    color: rgb(19, 107, 222);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.review{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: rgb(109, 116, 137);
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container div{
+    display: flex;
+    gap: 2rem;
+}
+
+.previous, .next{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}   
+
+.fa-angle-left, .fa-angle-right{
+    font-size: 2rem;
+}
+
+.surprise-btn{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    background: rgba(195, 215, 242, 0.612);
+    padding: 0.5rem 1rem;
+    letter-spacing: 2px;
+    color: rgb(19, 107, 222);
+    border: solid 1px  rgb(19, 107, 222);
+    box-shadow: 1px 1px 1px 1px  rgba(19, 107, 222,0.5);
+    border-radius: 5px;
+    transition: all 0.5s linear;
+}
+
+.surprise-btn:hover{
+    background-color:  rgb(34, 96, 177);
+    color: black;
+}
+
+
+

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%s;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f5f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+   
+}
+
+.accordion{
+    width: 100%;
+}
+
+.title{
+    margin-bottom: 3rem;
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #c59d5f;
+}
+
+.qa-container{
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    background-color: white;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+
+.q-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    letter-spacing: 2px;
+} 
+
+.icon-container{
+    border: 3px solid #c59d5f;
+    padding: .1rem;
+    margin-right: 1rem;
+}
+
+.icon-container:hover{
+    transform: rotate(180deg);
+}
+
+.icon-container i{
+    font-size: 1rem;
+    color: #c59d5f;
+    
+}
+    
+
+.border.q-container{
+ border-bottom: solid 1px rgb(231, 227, 227);
+}
+
+
+/* .minus-icon{
+    display: none;
+} */
+
+.answer{
+    display: none;
+}
+
+.active .answer{
+    display: block;
+}
+
+
